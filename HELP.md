@@ -24,3 +24,17 @@ https://blog.csdn.net/qq_38225558/article/details/101754743
 inMemoryAuthentication ===内存配置
 
 http://127.0.0.1:8080/login
+
+报错：
+Parameter 0 of constructor in com.lkspringsecurity.dmeo1.config.CusAuthenticationManager required a bean of type 'com.lkspringsecurity.dmeo1.config.AdminAuthenticationProvider' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.lkspringsecurity.dmeo1.config.AdminAuthenticationProvider' in your configuration.
+
+Disconnected from the target VM, address: '127.0.0.1:55540', transport: 'socket'
+
+Process finished with exit code 1
+
+解决：没有注入。
